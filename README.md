@@ -1,2 +1,2 @@
 # HelpDesk-Ticketing-Lab
-Simple Help desk ticketing lab. Simulated a company's AD and used ServiceNow to practice ticketing and account management.
+Enterprise-style IT support lab built in Microsoft Azure using Windows Server 2022 Datacenter: Azure Edition, Active Directory, DNS, DHCP, IIS, Group Policy, and ServiceNow.
