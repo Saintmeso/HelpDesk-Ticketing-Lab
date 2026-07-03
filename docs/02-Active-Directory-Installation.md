@@ -43,7 +43,7 @@ The Add Roles and Features Wizard opened, allowing Windows Server roles and feat
 
 ### Screenshot
 
-*(Insert Screenshot 4 Here)*
+<img width="1685" height="741" alt="Azure VM AD Not downloaded" src="https://github.com/user-attachments/assets/08d3fdb4-d3bc-4b61-8bd3-acedc1a7730c" />
 
 ---
 
