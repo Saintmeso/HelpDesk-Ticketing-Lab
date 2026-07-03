@@ -38,7 +38,8 @@ The Windows Server virtual machine deployed successfully and became available fo
 
 ### Screenshot
 
-*(Insert Screenshot 1 Here)*
+*<img width="1690" height="874" alt="Azure VM Lab Creation" src="https://github.com/user-attachments/assets/38cacb03-883c-4d93-8414-d0afb5ce3a95" /><img width="1696" height="879" alt="Azure VM Static Networking Configuration" src="https://github.com/user-attachments/assets/7611939b-f303-4a54-970c-0bbcf19ac04b" />
+
 
 ---
 
@@ -65,7 +66,8 @@ The virtual machine now maintains a permanent private IP address.
 
 ### Screenshot
 
-*(Insert Screenshot 2 Here)*
+<img width="1696" height="879" alt="Azure VM Static Networking Configuration" src="https://github.com/user-attachments/assets/56e62f4c-b2d0-42d1-a0c8-456c15d1f09e" />
+
 
 ---
 
