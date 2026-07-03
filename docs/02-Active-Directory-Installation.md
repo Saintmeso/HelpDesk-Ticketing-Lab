@@ -27,19 +27,19 @@ By the end of this section, the server will be configured to provide centralized
 
 ### Overview
 
-After connecting to the Windows Server virtual machine, Server Manager was opened to verify that Active Directory Domain Services had not yet been installed.
+After connecting to the Windows Server virtual machine, Search for Active Directory In the windows search engine.
 
 This confirms that the server is in its default state before beginning the installation process.
 
 ### Procedure
 
-1. Opened **Server Manager**.
-2. Selected **Manage**.
-3. Chose **Add Roles and Features**.
+1. Opened **Windows Server VM**.
+2. Selected **Windows Search**.
+3. Look for **Active Directory**.
 
 ### Result
 
-The Add Roles and Features Wizard opened, allowing Windows Server roles and features to be installed.
+The search confirmed that Active Directory is not installed and needs to be installed and configured.
 
 ### Screenshot
 
@@ -91,7 +91,7 @@ Windows Server began installing all selected server roles.
 
 ### Screenshot
 
-*(Insert Screenshot 5 Here)*
+<img width="783" height="560" alt="Azure VM AD Setup (DNS, WebServer, AD, etc )" src="https://github.com/user-attachments/assets/c06b9577-710d-4234-b477-f65d42ec6617" />
 
 ---
 
@@ -130,7 +130,7 @@ Group Policy Management was installed alongside Active Directory Domain Services
 
 ### Screenshot
 
-*(Insert Screenshot 6 Here)*
+<img width="783" height="560" alt="Azure VM AD SETUP (ensure group policy is checked)" src="https://github.com/user-attachments/assets/1e79c034-3e64-4578-bb2c-6b2fb0f15af1" />
 
 ---
 
@@ -153,7 +153,7 @@ The server roles appeared successfully within Server Manager and were ready for 
 
 ### Screenshot
 
-*(Insert Screenshot 7 Here)*
+<img width="1919" height="831" alt="Azure VM AD SETUP COMPLETE PIC" src="https://github.com/user-attachments/assets/e8c71f8e-e109-4374-ad7e-2673d31738db" />
 
 ---
 
@@ -188,7 +188,9 @@ The Active Directory Domain Services Configuration Wizard opened.
 
 ### Screenshot
 
-*(Insert Screenshot 8 Here)*
+<img width="1919" height="831" alt="Azure VM AD PROMOTION More Button" src="https://github.com/user-attachments/assets/713699b1-ca4c-4c4e-9fb6-e007d7d4d9ea" />
+<img width="886" height="494" alt="Azure VM AD PROMOTION SETTINGS" src="https://github.com/user-attachments/assets/c69f5879-75c6-4a7e-8d15-868de6f119d4" />
+
 
 ---
 
@@ -223,7 +225,7 @@ The Active Directory forest configuration was successfully created.
 
 ### Screenshot
 
-*(Insert Screenshot 9 Here)*
+<img width="761" height="560" alt="Azure VM AD New Forest" src="https://github.com/user-attachments/assets/26be391a-1581-46d0-b08f-abb17e4a6ad2" />
 
 ---
 
@@ -249,7 +251,7 @@ The server automatically restarted to complete the installation.
 
 ### Screenshot
 
-*(Insert Screenshot 10 Here)*
+<img width="761" height="562" alt="Azure VM AD Prerequisite Check" src="https://github.com/user-attachments/assets/79408b5a-7bf3-4d50-b521-3abf01df0cd4" />
 
 ---
 
@@ -286,7 +288,7 @@ The Active Directory environment was ready for administration.
 
 ### Screenshot
 
-*(Insert Screenshot 11 Here)*
+<img width="752" height="530" alt="Azure VM AD Dashboard" src="https://github.com/user-attachments/assets/e703b247-70f9-45ee-9b0e-1990d0de4a5a" />
 
 ---
 
