@@ -38,7 +38,8 @@ The Windows Server virtual machine deployed successfully and became available fo
 
 ### Screenshot
 
-*<img width="1690" height="874" alt="Azure VM Lab Creation" src="https://github.com/user-attachments/assets/38cacb03-883c-4d93-8414-d0afb5ce3a95" /><img width="1696" height="879" alt="Azure VM Static Networking Configuration" src="https://github.com/user-attachments/assets/7611939b-f303-4a54-970c-0bbcf19ac04b" />
+<img width="1690" height="874" alt="Azure VM Lab Creation" src="https://github.com/user-attachments/assets/d467cc5c-f7fc-4a90-b617-3fd925138e5c" />
+
 
 
 ---
@@ -94,4 +95,5 @@ A secure remote connection to the Windows Server virtual machine was successfull
 
 ### Screenshot
 
-*(Insert Screenshot 3 Here)*
+<img width="910" height="826" alt="image" src="https://github.com/user-attachments/assets/89fb5b9b-4530-4484-857b-4b30bf739dcc" />
+
