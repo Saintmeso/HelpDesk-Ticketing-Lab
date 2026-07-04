@@ -1,10 +1,58 @@
 # Enterprise Active Directory & ServiceNow Lab
 
-## Overview
+## Business Problem
 
-This project demonstrates the deployment and administration of an enterprise Active Directory environment using **Windows Server 2022 Datacenter: Azure Edition** hosted in **Microsoft Azure**.
+Organizations rely on centralized identity management and ticketing systems to efficiently manage employee accounts and IT support requests. Without a centralized solution, administrators must manually manage user accounts, permissions, and troubleshooting tasks, increasing the likelihood of security risks, inconsistent configurations, and longer resolution times.
 
-The lab simulates real-world IT Support and Help Desk operations by integrating **Active Directory** with **ServiceNow**. Throughout the project, common enterprise administrative tasks such as user provisioning, password resets, account management, Organizational Unit administration, and incident documentation are performed to mirror day-to-day responsibilities of Help Desk Technicians and Junior System Administrators.
+This project simulates a small enterprise environment by deploying a Windows Server 2022 Domain Controller in Microsoft Azure and integrating Active Directory with ServiceNow. The environment demonstrates how IT administrators can centrally manage users, organizational structure, and common Help Desk requests such as password resets, account unlocks, and new employee onboarding.
+
+---
+
+# Project Architecture
+
+```text
+                         Microsoft Azure
+                                │
+                    Windows Server 2022 VM
+                                │
+        ┌───────────────────────┴────────────────────────┐
+        │                                                │
+ Active Directory Domain Services                  Azure Bastion
+        │
+        ├── DNS
+        ├── DHCP
+        ├── Group Policy Management
+        ├── Organizational Units
+        ├── Users
+        └── Security Groups
+                │
+                ▼
+      ServiceNow Developer Instance
+                │
+        ├── Password Reset Requests
+        ├── Account Unlock Requests
+        └── New Employee Onboarding
+```
+
+---
+
+# Key Design Decisions
+
+## 1. Secure Administrative Access with Azure Bastion
+
+Instead of exposing Remote Desktop (RDP) directly to the internet, Azure Bastion was used to securely manage the Windows Server through the Azure Portal. This reduces the attack surface by eliminating the need for a public RDP endpoint while still allowing remote administration.
+
+---
+
+## 2. Organizational Unit Structure
+
+Rather than placing every object in the default Active Directory containers, Organizational Units were created to separate users, computers, and groups. This mirrors how enterprise environments organize resources and provides a scalable structure for future Group Policy deployment and administrative delegation.
+
+---
+
+## 3. Integrating Active Directory with ServiceNow
+
+Instead of demonstrating Active Directory administration in isolation, ServiceNow was incorporated to simulate realistic Help Desk workflows. Common support tasks—including password resets, account unlocks, and new employee onboarding—were documented from ticket creation through resolution, reflecting day-to-day enterprise IT operations.
 
 ---
 
@@ -20,23 +68,6 @@ The lab simulates real-world IT Support and Help Desk operations by integrating 
 - Internet Information Services (IIS)
 - Group Policy Management
 - ServiceNow Developer Instance
-
----
-
-# Skills Demonstrated
-
-- Azure Virtual Machine Deployment
-- Windows Server Administration
-- Active Directory Installation & Configuration
-- Domain Controller Promotion
-- Organizational Unit Administration
-- User Account Management
-- Security Group Administration
-- Password Reset Procedures
-- Account Unlock Procedures
-- New Employee Onboarding
-- ServiceNow Incident Management
-- Enterprise Help Desk Documentation
 
 ---
 
@@ -56,28 +87,37 @@ The following documentation provides a complete walkthrough of the lab environme
 
 ---
 
-# Project Objectives
+# Technologies & Skills Demonstrated
 
-The primary objectives of this lab are to:
+### Infrastructure
 
-- Deploy a Windows Server 2022 virtual machine in Microsoft Azure.
-- Configure an enterprise Active Directory environment.
-- Promote the server to a Domain Controller.
-- Create and organize Organizational Units.
-- Provision and manage Active Directory user accounts.
-- Create and manage security groups.
-- Simulate common Help Desk scenarios using ServiceNow.
-- Document enterprise IT workflows using professional technical documentation.
+- Microsoft Azure
+- Windows Server 2022 Datacenter: Azure Edition
+- Azure Bastion
+
+### Identity & Directory Services
+
+- Active Directory Domain Services
+- DNS
+- DHCP
+- Organizational Units
+- User & Group Management
+
+### IT Operations
+
+- ServiceNow Incident Management
+- Password Reset Procedures
+- Account Unlock Procedures
+- New Employee Onboarding
+- Enterprise Help Desk Documentation
 
 ---
 
 # Future Improvements
 
-Planned enhancements for this lab include:
-
-- Joining Windows 11 client computers to the Active Directory domain.
-- Configuring Group Policy Objects (GPOs).
-- Creating additional ServiceNow request and incident scenarios.
-- Implementing shared folder permissions using security groups.
-- Deploying Microsoft Entra ID (Azure AD) integration.
-- Configuring Windows Server Update Services (WSUS).
+- Deploy a Windows 11 client and join it to the Active Directory domain.
+- Configure Group Policy Objects (GPOs) for centralized workstation management.
+- Expand the ServiceNow environment with additional enterprise support scenarios.
+- Implement shared folder permissions using Active Directory security groups.
+- Integrate Microsoft Entra ID for hybrid identity management.
+- Configure Windows Server Update Services (WSUS).
