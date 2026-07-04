@@ -28,7 +28,7 @@ This workflow demonstrates a common responsibility performed by Help Desk Techni
 
 **Job Title:** Financial Analyst
 
-**Organization:** Contoso Ltd.
+**Organization:** Obeta
 
 **Request:** Provision a new Active Directory account for a newly hired employee.
 
