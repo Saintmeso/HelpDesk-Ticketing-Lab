@@ -12,7 +12,6 @@ The goal of this section is to organize the Active Directory environment by crea
 |-----------|---------------|
 | Operating System | Windows Server 2022 Datacenter: Azure Edition |
 | Management Tool | Active Directory Users and Computers (ADUC) |
-| Domain | *Your Domain Name* |
 | Administrative Tool | Server Manager / ADUC |
 
 ---
