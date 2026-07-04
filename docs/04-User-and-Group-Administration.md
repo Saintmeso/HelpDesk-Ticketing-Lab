@@ -14,7 +14,6 @@ These tasks represent common responsibilities performed by Help Desk Technicians
 |-----------|---------------|
 | Operating System | Windows Server 2022 Datacenter: Azure Edition |
 | Management Tool | Active Directory Users and Computers (ADUC) |
-| Domain | *Your Domain Name* |
 | Organizational Unit | Branch 1 |
 
 ---
